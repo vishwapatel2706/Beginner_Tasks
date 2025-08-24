@@ -1,0 +1,317 @@
+github-beginner-guide.html
+html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Beginner Guide - Step by Step</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Hind', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .step-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #667eea;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            border: 3px solid #667eea;
+        }
+        
+        .github-icon {
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/56ac0d8e-0566-4f11-9774-439a76c7c81f.png" alt="GitHub Logo - Black cat silhouette on white background" class="w-12 h-12 github-icon" onerror="this.src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'">
+                    <h1 class="text-2xl font-bold text-gray-800">GitHub Beginner Guide</h1>
+                </div>
+                <div class="text-sm text-gray-600">Step by Step Tutorial</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">GitHub सीखें आसानी से!</h2>
+            <p class="text-xl mb-8">शुरुआती लोगों के लिए पूरी गाइड हिंदी में</p>
+            <div class="bg-white rounded-lg p-6 max-w-2xl mx-auto shadow-xl">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/106e0195-27e5-4e22-97b8-6a1eb51b0285.png" alt="GitHub dashboard interface showing repository creation and file management options" class="w-full h-48 object-cover rounded-md mb-4" onerror="this.style.display='none'">
+                <p class="text-gray-700 text-lg">नीचे दिए गए steps को follow करके GitHub का उपयोग करना सीखें</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">शुरुआती Steps (Beginner Tasks)</h2>
+            
+            <!-- Step 1 -->
+            <div class="step-card bg-white rounded-lg p-6 mb-6 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number rounded-full flex items-center justify-center text-xl font-bold text-blue-600 mr-4">1</div>
+                    <h3 class="text-2xl font-semibold">GitHub Account बनाएं</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-4">सबसे पहले GitHub पर account create करें:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><a href="https://github.com/" target="_blank" class="text-blue-600 hover:underline">github.com</a> पर जाएं</li>
+                            <li>"Sign up" button पर click करें</li>
+                            <li>Email address, password और username डालें</li>
+                            <li>Email verify करें</li>
+                            <li>Basic setup complete करें</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e3b2d79-c63d-4ad3-9562-42ed1c01f611.png" alt="GitHub signup page with registration form showing email, password and username fields" class="w-full h-48 object-cover rounded" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-card bg-white rounded-lg p-6 mb-6 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number rounded-full flex items-center justify-center text-xl font-bold text-blue-600 mr-4">2</div>
+                    <h3 class="text-2xl font-semibold">नया Repository बनाएं</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-4">Repository (repo) project का folder होता है:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>Dashboard पर "+" icon पर click करें</li>
+                            <li>"New repository" select करें</li>
+                            <li>Repository name डालें (जैसे: my-first-project)</li>
+                            <li>Description डालें (optional)</li>
+                            <li>Public या Private select करें</li>
+                            <li>"Create repository" button press करें</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2966b91b-b170-42a0-ae4f-8e2105aaf102.png" alt="GitHub repository creation page showing repository name field, description, and visibility options" class="w-full h-48 object-cover rounded" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-card bg-white rounded-lg p-6 mb-6 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number rounded-full flex items-center justify-center text-xl font-bold text-blue-600 mr-4">3</div>
+                    <h3 class="text-2xl font-semibold">पहला File Create करें</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-4">अपने repository में पहला file add करें:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>Repository page पर जाएं</li>
+                            <li>"Add file" button पर click करें</li>
+                            <li>"Create new file" select करें</li>
+                            <li>File name डालें (जैसे: README.md)</li>
+                            <li>Content लिखें</li>
+                            <li>नीचे "Commit changes" section में description डालें</li>
+                            <li>"Commit new file" button press करें</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/18868aa5-3cf5-4e4f-bf0e-b82e72141816.png" alt="GitHub file creation interface showing file name input and content editor with commit message section" class="w-full h-48 object-cover rounded" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step-card bg-white rounded-lg p-6 mb-6 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number rounded-full flex items-center justify-center text-xl font-bold text-blue-600 mr-4">4</div>
+                    <h3 class="text-2xl font-semibold">File Upload करें</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-4">Computer से files upload करें:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>Repository page पर जाएं</li>
+                            <li>"Add file" button पर click करें</li>
+                            <li>"Upload files" select करें</li>
+                            <li>Files select करें या drag & drop करें</li>
+                            <li>Commit message डालें</li>
+                            <li>"Commit changes" button press करें</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1d2eb675-563e-4eaa-b079-882949c82ccf.png" alt="GitHub file upload interface showing drag and drop area and file selection options" class="w-full h-48 object-cover rounded" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="step-card bg-white rounded-lg p-6 mb-6 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number rounded-full flex items-center justify-center text-xl font-bold text-blue-600 mr-4">5</div>
+                    <h3 class="text-2xl font-semibold">File Edit करें</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-4">Existing files को edit करें:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>File पर click करें</li>
+                            <li>右上 corner में "Edit" icon (pencil) पर click करें</li>
+                            <li>Content modify करें</li>
+                            <li>Commit message डालें (जैसे: "fixed typo")</li>
+                            <li>"Commit changes" button press करें</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ed1f119-160a-4860-b3ef-5996efbe9da5.png" alt="GitHub file editing interface showing edit pencil icon and content modification area" class="w-full h-48 object-cover rounded" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="step-card bg-white rounded-lg p-6 mb-6 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number rounded-full flex items-center justify-center text-xl font-bold text-blue-600 mr-4">6</div>
+                    <h3 class="text-2xl font-semibold">README.md File बनाएं</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-gray-700 mb-4">अपने project का description लिखें:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>README.md special file होती है</li>
+                            <li>यह repository के front page पर show होती है</li>
+                            <li>Markdown format use करें</li>
+                            <li>Project के बारे में information डालें</li>
+                            <li>Installation instructions लिखें</li>
+                            <li>Usage examples दें</li>
+                        </ul>
+                        <div class="mt-4 p-3 bg-gray-100 rounded">
+                            <code class="text-sm">
+# My First Project<br>
+This is my first GitHub repository.<br>
+## Installation<br>
+Clone this repository and run the code.
+                            </code>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/23c0acd9-97d3-4e55-9ff6-4c3b1cb5c2b4.png" alt="Example README.md file showing markdown formatting with headings, descriptions and code blocks" class="w-full h-48 object-cover rounded" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Quick Tips Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">जरूरी Tips</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <div class="text-blue-600 text-2xl mb-3">📁</div>
+                    <h3 class="font-semibold mb-2">Clear Names</h3>
+                    <p class="text-sm text-gray-600">Files और repositories के clear names रखें</p>
+                </div>
+                
+                <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                    <div class="text-green-600 text-2xl mb-3">📝</div>
+                    <h3 class="font-semibold mb-2">Good Messages</h3>
+                    <p class="text-sm text-gray-600">Commit messages descriptive रखें</p>
+                </div>
+                
+                <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
+                    <div class="text-purple-600 text-2xl mb-3">🔍</div>
+                    <h3 class="font-semibold mb-2">Regular Updates</h3>
+                    <p class="text-sm text-gray-600">Regularly projects update करते रहें</p>
+                </div>
+                
+                <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
+                    <div class="text-orange-600 text-2xl mb-3">🌐</div>
+                    <h3 class="font-semibold mb-2">Public Projects</hh3>
+                    <p class="text-sm text-gray-600">Learning के लिए public repositories use करें</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">अभ्यास करें!</h2>
+            
+            <div class="bg-white rounded-lg p-8 max-w-2xl mx-auto shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-600">आज का Task</h3>
+                <p class="text-gray-700 mb-6">नीचे दिए गए steps को follow करके practice करें:</p>
+                
+                <div class="text-left space-y-3 mb-6">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">1</div>
+                        <span>नया GitHub account बनाएं (अगर नहीं है)</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">2</div>
+                        <span>"my-learning-project" नाम का repository बनाएं</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">3</div>
+                        <span>README.md file create करें</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-3">4</div>
+                        <span>एक sample file upload करें</span>
+                    </div>
+                </div>
+                
+                <button onclick="markAsComplete()" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
+                    Mark as Complete
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 GitHub Beginner Guide. All rights reserved.</p>
+            <p class="text-gray-400 mt-2">Made with ❤️ for beginners</p>
+        </div>
+    </footer>
+
+    <script>
+        function markAsComplete() {
+            alert('बहुत बढ़िया! आपने अपना पहला GitHub task complete कर लिया है! 🎉');
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
